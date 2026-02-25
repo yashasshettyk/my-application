@@ -40,10 +40,8 @@ function App() {
         <Navbar />
       </motion.div>
 
-      {/* Hero — first paint, no lazy */}
-      <FadeUp>
-        <Hero />
-      </FadeUp>
+      {/* Hero — first paint, no lazy, animates itself internally */}
+      <Hero />
 
       {/* Lazy sections — each fades up as it enters viewport */}
       <Suspense fallback={null}>
