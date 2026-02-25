@@ -15,8 +15,8 @@ function App() {
   const [ready, setReady] = useState(false)
 
   useEffect(() => {
-    // Match the loader's total duration (1150ms bolt + 300ms fade-out)
-    const t = setTimeout(() => setReady(true), 1450)
+    // Match the loader's total duration (1500ms animation + 400ms fade-out)
+    const t = setTimeout(() => setReady(true), 1600)
     return () => clearTimeout(t)
   }, [])
 
