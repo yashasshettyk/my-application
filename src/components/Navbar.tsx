@@ -56,8 +56,8 @@ export default function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
         scrolled
-          ? "glass shadow-lg shadow-black/20 py-3"
-          : "bg-transparent py-5"
+          ? "bg-[#0a0a0f]/95 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/30 py-3"
+          : "bg-[#0a0a0f]/80 backdrop-blur-lg border-b border-white/5 py-5"
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -132,7 +132,7 @@ export default function Navbar() {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="md:hidden overflow-hidden"
           >
-            <div className="glass mx-4 mt-2 rounded-2xl p-4 flex flex-col gap-2">
+            <div className="bg-[#0e0e1a] border border-white/10 mx-4 mt-2 rounded-2xl p-4 flex flex-col gap-2 shadow-2xl shadow-black/50">
               {navLinks.map((link, i) => (
                 <motion.button
                   key={link.href}
@@ -140,7 +140,7 @@ export default function Navbar() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.05 }}
                   onClick={() => handleNavClick(link.href)}
-                  className="text-left px-4 py-3 rounded-xl text-[#8888aa] hover:text-white hover:bg-[#6c63ff]/10 transition-all duration-200 font-medium"
+                  className="text-left px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-[#6c63ff]/15 transition-all duration-200 font-medium"
                 >
                   {link.label}
                 </motion.button>
