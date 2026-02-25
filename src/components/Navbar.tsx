@@ -44,8 +44,16 @@ export default function Navbar() {
 
   const handleNavClick = (href: string) => {
     setIsOpen(false);
-    const el = document.querySelector(href);
-    el?.scrollIntoView({ behavior: "smooth" });
+    // Small delay lets the mobile menu animate closed before scrolling,
+    // preventing layout shift that breaks scrollIntoView on mobile
+    setTimeout(() => {
+      const el = document.querySelector(href);
+      if (el) {
+        const yOffset = -80; // account for fixed navbar height
+        const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    }, 50);
   };
 
   return (
@@ -129,7 +137,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
             className="md:hidden overflow-hidden"
           >
             <div className="bg-[#0e0e1a] border border-white/10 mx-4 mt-2 rounded-2xl p-4 flex flex-col gap-2 shadow-2xl shadow-black/50">
