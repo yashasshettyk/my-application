@@ -158,7 +158,7 @@ export default function PageLoader() {
                 animate={phase === "shake" ? { scale: [1, 1.06, 0.97, 1.04, 1] } : {}}
                 transition={{ duration: 0.4 }}
               >
-                DevNet Studios
+                web.kraft
               </motion.span>
               <motion.div
                 className="flex items-center justify-center gap-1.5 mt-1"

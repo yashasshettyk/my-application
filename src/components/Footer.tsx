@@ -56,7 +56,7 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#6c63ff] to-[#43e8d8] flex items-center justify-center glow-sm">
                 <Zap className="w-5 h-5 text-white" fill="white" />
               </div>
-              <span className="text-2xl font-black gradient-text">DevNet Studios</span>
+              <span className="text-2xl font-black gradient-text">web.kraft</span>
             </motion.div>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -154,7 +154,7 @@ export default function Footer() {
           className="flex flex-col sm:flex-row items-center justify-between py-6 gap-4"
         >
           <p className="text-[#8888aa] text-xs flex items-center gap-1.5">
-            © 2026 DevNet Studios. Made with{" "}
+            © 2026 web.kraft. Made with{" "}
             <Heart className="w-3.5 h-3.5 text-[#ff6584]" fill="#ff6584" />
             {" "}for ambitious businesses.
           </p>

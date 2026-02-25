@@ -9,7 +9,7 @@ const testimonials = [
     business: "Glow Beauty Studio",
     emoji: "💅",
     rating: 5,
-    text: "DevNet Studios transformed our salon's online presence completely. Bookings tripled within the first month! The website is stunning, loads instantly, and our clients constantly compliment how easy it is to book appointments. Worth every penny.",
+    text: "web.kraft transformed our salon's online presence completely. Bookings tripled within the first month! The website is stunning, loads instantly, and our clients constantly compliment how easy it is to book appointments. Worth every penny.",
     color: "#a78bfa",
   },
   {
@@ -27,7 +27,7 @@ const testimonials = [
     business: "Summit Law Group",
     emoji: "⚖️",
     rating: 5,
-    text: "As a law firm, credibility is everything. DevNet Studios delivered a site that exudes professionalism and trust. Consultation requests doubled in 6 weeks. Our competitors are still using websites from 2015 — we feel miles ahead.",
+    text: "As a law firm, credibility is everything. web.kraft delivered a site that exudes professionalism and trust. Consultation requests doubled in 6 weeks. Our competitors are still using websites from 2015 — we feel miles ahead.",
     color: "#43e8d8",
   },
   {

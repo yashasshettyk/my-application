@@ -44,7 +44,7 @@ export default function Contact() {
     } else {
       const subject = encodeURIComponent(`Website Quote Request – ${form.business || form.name}`);
       const body =
-        `Hi DevNet Studios,%0A%0A` +
+        `Hi web.kraft,%0A%0A` +
         `I'd like to get a free quote for my website.%0A%0A` +
         `Name: ${encodeURIComponent(form.name)}%0A` +
         `Email: ${encodeURIComponent(form.email)}%0A` +
@@ -92,7 +92,7 @@ export default function Contact() {
               <span className="gradient-text">Your Business?</span>
             </h2>
             <p className="text-[#8888aa] text-lg max-w-2xl mx-auto mb-8">
-              Join 50+ businesses who trusted DevNet Studios to build their online presence.
+              Join 50+ businesses who trusted web.kraft to build their online presence.
               Your first consultation is completely free.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
