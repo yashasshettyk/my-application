@@ -79,7 +79,7 @@ export default function Navbar() {
             <div className="relative w-9 h-9 rounded-xl bg-gradient-to-br from-[#6c63ff] to-[#43e8d8] flex items-center justify-center glow-sm">
               <Zap className="w-5 h-5 text-white" fill="white" />
             </div>
-            <span className="text-xl font-bold gradient-text">WebCraft</span>
+            <span className="text-xl font-bold gradient-text">DevNet Studios</span>
           </motion.a>
 
           {/* Desktop Nav */}
